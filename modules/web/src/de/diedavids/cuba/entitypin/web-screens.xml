@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<screen-config xmlns="http://schemas.haulmont.com/cuba/screens.xsd">
+    <include file="de/diedavids/cuba/entitypin/screens.xml"/>
+    <screen id="entitypin$Customer.browse"
+            template="de/diedavids/cuba/entitypin/web/customer/customer-browse.xml"/>
+    <screen id="entitypin$Customer.edit"
+            template="de/diedavids/cuba/entitypin/web/customer/customer-edit.xml"/>
+    <screen id="entitypin$Order.browse"
+            template="de/diedavids/cuba/entitypin/web/order/order-browse.xml"/>
+    <screen id="entitypin$Order.edit"
+            template="de/diedavids/cuba/entitypin/web/order/order-edit.xml"/>
+    <screen id="mainWindow"
+            template="de/diedavids/cuba/entitypin/web/screens/ext-mainwindow.xml"/>
+</screen-config>
