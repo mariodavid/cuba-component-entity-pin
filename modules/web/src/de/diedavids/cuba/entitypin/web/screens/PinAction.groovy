@@ -32,20 +32,8 @@ class PinAction extends ItemTrackingAction implements Action.HasOpenType {
 
     @Override
     void actionPerform(Component component) {
-
         def mainWindow = AppUI.current.topLevelWindow
         mainWindow.pinEntity(target.singleSelected)
         target.datasource.refresh()
-//        Window dokumentWindow = target.frame.openWindow(
-//                'pl$Dokument.browse',
-//                openType ?: WindowManager.OpenType.DIALOG,
-//                [entity: target.singleSelected])
-//
-//        dokumentWindow.addCloseListener(new Window.CloseListener() {
-//            @Override
-//            void windowClosed(String actionId) {
-//                updateCaption()
-//            }
-//        })
     }
 }
