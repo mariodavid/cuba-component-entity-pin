@@ -1,10 +1,10 @@
 package de.diedavids.cuba.entitypin.service
 
-import de.diedavids.cuba.entitypin.entity.Customer
-
+import com.haulmont.cuba.core.entity.Entity
 
 public interface PinEntityService {
     String NAME = "entitypin_PinEntityService";
 
-    void pinEntity(Customer customer)
+    void pinEntity(Entity entity)
+    void unpinEntity(Entity entity)
 }

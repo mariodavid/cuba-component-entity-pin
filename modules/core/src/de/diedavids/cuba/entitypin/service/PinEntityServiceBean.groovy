@@ -1,10 +1,11 @@
 package de.diedavids.cuba.entitypin.service
 
+import com.haulmont.cuba.core.entity.Entity
+import com.haulmont.cuba.core.global.DataManager
+import com.haulmont.cuba.core.global.LoadContext
 import com.haulmont.cuba.core.global.Metadata
 import com.haulmont.cuba.core.global.UserSessionSource
-import com.haulmont.cuba.security.entity.Constraint
-import com.haulmont.cuba.security.entity.ConstraintCheckType
-import com.haulmont.cuba.security.entity.ConstraintOperationType
+import com.haulmont.cuba.security.entity.Group
 import de.diedavids.cuba.entitypin.entity.Customer
 import org.springframework.stereotype.Service
 
@@ -19,23 +20,55 @@ public class PinEntityServiceBean implements PinEntityService {
     @Inject
     Metadata metadata
 
+    @Inject
+    DataManager dataManager
+
+
     @Override
-    void pinEntity(Customer customer) {
+    void pinEntity(Entity entity) {
+        def entityName = entity.getMetaClass().getName()
 
         def userSession = userSessionSource.userSession
 
-        userSession.setAttribute('pinEntity', customer.id)
+        userSession.setAttribute('pinEntity', entity)
+        userSession.setAttribute('pinEntityId', entity.id)
 
-        def c = metadata.create(Constraint)
+        LoadContext loadContext = LoadContext.create(Group)
+                .setQuery(LoadContext.createQuery(
+                "select e from sec\$Group e where e.parent.id = '5d4601d6-9894-b0af-64b8-83de6d7396ec' and e.name = '$entityName'"
+        )
+        )
 
-        c.checkType = ConstraintCheckType.DATABASE
+        loadContext.setView('group.copy')
+        Group group = dataManager.load(loadContext)
 
-        c.entityName = 'entitypin$Order'
-        c.whereClause = '{E}.customer.id = :session$pinEntity'
-        c.isActive = true
-        c.operationType = ConstraintOperationType.ALL
+        group.constraints.each {
+            userSession.addConstraint(it)
+        }
+    }
 
-        userSession.addConstraint(c)
+    @Override
+    void unpinEntity(Entity entity) {
+
+        def entityName = entity.getMetaClass().getName()
+        def userSession = userSessionSource.userSession
+
+        userSession.removeAttribute('pinEntity')
+        userSession.removeAttribute('pinEntityId')
+
+
+        LoadContext loadContext = LoadContext.create(Group)
+                .setQuery(LoadContext.createQuery(
+                "select e from sec\$Group e where e.parent.id = '5d4601d6-9894-b0af-64b8-83de6d7396ec' and e.name = '$entityName'"
+        )
+        )
+
+        loadContext.setView('group.copy')
+        Group group = dataManager.load(loadContext)
+
+        group.constraints.each {
+            userSession.removeConstraint(it)
+        }
 
     }
 }

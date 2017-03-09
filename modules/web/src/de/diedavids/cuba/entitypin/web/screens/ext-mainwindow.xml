@@ -9,9 +9,10 @@
     <layout>
         <hbox id="titleBar">
             <button id="pinBtn"
-                    caption="No Customer"
+                    caption="msg://pinEntity.noPin"
                     ext:index="2"
-                    invoke="pinClick"
+                    enable="false"
+                    invoke="releasePin"
                     icon="icons/pin.png"/>
         </hbox>
     </layout>

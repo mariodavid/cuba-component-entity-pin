@@ -44,6 +44,8 @@
                         action="ordersTable.edit"/>
                 <button id="removeBtn"
                         action="ordersTable.remove"/>
+                <button id="pinBtn"
+                        action="ordersTable.pin"/>
             </buttonsPanel>
         </groupTable>
     </layout>

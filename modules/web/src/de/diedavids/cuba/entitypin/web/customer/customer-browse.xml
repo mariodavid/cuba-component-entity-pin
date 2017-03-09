@@ -29,10 +29,6 @@
                 <action id="create"/>
                 <action id="edit"/>
                 <action id="remove"/>
-                <action id="pinAction"
-                        invoke="pin"
-                        caption="msg://pin"
-                />
             </actions>
             <columns>
                 <column id="name"/>
@@ -48,7 +44,7 @@
                 <button id="removeBtn"
                         action="customersTable.remove"/>
                 <button id="pinBtn"
-                        action="customersTable.pinAction"/>
+                        action="customersTable.pin"/>
             </buttonsPanel>
         </groupTable>
     </layout>
