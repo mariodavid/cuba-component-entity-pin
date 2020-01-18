@@ -1,6 +1,6 @@
 
 buildscript {
-    ext.cubaVersion = '6.4.2'
+    ext.cubaVersion = '6.10.15'
     repositories {
         maven {
             url 'https://repo.cuba-platform.com/content/groups/work'
@@ -14,8 +14,6 @@ buildscript {
     dependencies {
         classpath "com.haulmont.gradle:cuba-plugin:$cubaVersion"
 
-        classpath "com.haulmont.cuba:cuba-global:$cubaVersion"
-
         
     }
 }
@@ -25,7 +23,7 @@ def coreModule = project(':app-core')
 def guiModule = project(':app-gui')
 def webModule = project(':app-web')
 
-def servletApi = 'org.apache.tomcat:tomcat-servlet-api:8.0.26'
+def servletApi = 'javax.servlet:javax.servlet-api:3.1.0'
 
 
 apply(plugin: 'idea')
@@ -41,6 +39,11 @@ cuba {
         dir = "$project.rootDir/deploy/tomcat"
     }
 }
+
+dependencies {
+    appComponent("com.haulmont.cuba:cuba-global:$cubaVersion")
+}
+
 
 def hsql = 'org.hsqldb:hsqldb:2.2.9'
 
@@ -71,10 +74,16 @@ configure([globalModule, coreModule, guiModule, webModule]) {
         main { groovy { srcDirs = ["src"] } }
         test { groovy { srcDirs = ["test"] } }
     }
+
+    sourceSets.main.output.classesDir = new File(project.buildDir, "classes/main")
+    sourceSets.test.output.classesDir = new File(project.buildDir, "classes/test")
+
 }
 
 configure(globalModule) {
-    task enhance(type: CubaEnhancing)
+    entitiesEnhancing {
+        main { enabled = true }
+    }
     
     
 }
@@ -205,7 +214,7 @@ task restart(dependsOn: ['stop', ':app-core:deploy', ':app-web:deploy'], descrip
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '3.1'
+    gradleVersion = '4.3.1'
 }
 
 apply from: 'extra.gradle'
