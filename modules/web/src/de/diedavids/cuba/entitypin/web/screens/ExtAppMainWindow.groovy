@@ -6,31 +6,23 @@ import com.haulmont.cuba.gui.components.Button
 import com.haulmont.cuba.gui.components.Component
 import com.haulmont.cuba.gui.components.DialogAction
 import com.haulmont.cuba.gui.components.Frame
-import com.haulmont.cuba.gui.xml.layout.ComponentsFactory
 import com.haulmont.cuba.security.global.UserSession
 import com.haulmont.cuba.web.app.mainwindow.AppMainWindow
 import de.diedavids.cuba.entitypin.service.PinEntityService
+import de.diedavids.cuba.entitypin.web.EntityPinnedEvent
 
 import javax.inject.Inject
 
 class ExtAppMainWindow extends AppMainWindow {
 
     @Inject
-    Button pinBtn;
+    Button pinBtn
 
     @Inject
-    UserSession userSession;
-
-    @Inject
-    ComponentsFactory componentsFactory;
+    UserSession userSession
 
     @Inject
     PinEntityService pinEntityService
-
-    @Override
-    void init(Map<String, Object> params) {
-        super.init(params);
-    }
 
 
     void releasePin() {
@@ -45,8 +37,10 @@ class ExtAppMainWindow extends AppMainWindow {
         showNotification("Pin released", Frame.NotificationType.TRAY);
     }
 
-    void pinEntity(Entity entity) {
+    @org.springframework.context.event.EventListener
+    void pinEntity(EntityPinnedEvent entityPinnedEvent) {
 
+        def entity = entityPinnedEvent.getEntity()
         def instanceCaption = entity.instanceName
 
         showOptionDialog(
@@ -61,7 +55,7 @@ class ExtAppMainWindow extends AppMainWindow {
                                 userSession.setAttribute('pinEntityId', entity.id)
                                 userSession.setAttribute('pinEntity', entity)
 
-                                pinEntityService.pinEntity(entity)
+                                pinEntityService.pinEntity(entityPinnedEvent.getEntity())
                                 Object pinEntity = userSession.getAttribute("pinEntity");
                                 if (pinEntity != null) {
                                     showNotification(formatMessage('pinEntity.pinned.message', instanceCaption), Frame.NotificationType.TRAY);

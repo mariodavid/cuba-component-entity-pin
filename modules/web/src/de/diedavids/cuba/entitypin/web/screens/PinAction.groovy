@@ -1,5 +1,7 @@
 package de.diedavids.cuba.entitypin.web.screens
 
+import com.haulmont.cuba.core.global.AppBeans
+import com.haulmont.cuba.core.global.Messages
 import com.haulmont.cuba.gui.WindowManager
 import com.haulmont.cuba.gui.components.Action
 import com.haulmont.cuba.gui.components.Component
@@ -26,7 +28,7 @@ class PinAction extends ItemTrackingAction implements Action.HasOpenType {
     protected PinAction(ListComponent target, String id) {
         super(target, id)
 
-        this.caption = messages.getMainMessage(ACTION_MSG_KEY)
+        this.caption = AppBeans.get(Messages).getMainMessage(ACTION_MSG_KEY)
         this.icon = 'icons/pin.png'
     }
 
