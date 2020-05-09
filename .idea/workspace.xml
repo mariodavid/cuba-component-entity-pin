@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50e97e4b-a85f-444b-8616-009ca6a5e83e" name="Default Changelist" comment="switched to CUBA studio 7">
-      <change beforePath="$PROJECT_DIR$/.idea/cuba-project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cuba-project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/1-before-customers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/2-before-orders.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/3-pin-customer-homer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/4-after-customers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/5-after-orders.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web-app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web-app.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/screens/ExtAppMainWindow.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/screens/ExtAppMainWindow.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +46,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="de.diedavids.cuba.entitypin.web" />
     </key>
