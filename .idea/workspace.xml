@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50e97e4b-a85f-444b-8616-009ca6a5e83e" name="Default Changelist" comment="switched to CUBA studio 7">
-      <change afterPath="$PROJECT_DIR$/img/1-before-customers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/2-before-orders.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/3-pin-customer-homer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/4-after-customers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/5-after-orders.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/pin-customer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/pin-order.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

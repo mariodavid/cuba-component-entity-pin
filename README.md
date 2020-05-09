@@ -20,3 +20,9 @@ Now the whole application acts as if you have only this customer in your applica
 ### After applying Entity Pin
 ![4-after-customers](img/4-after-customers.png)
 ![5-after-orders](img/5-after-orders.png)
+
+
+
+## Screencasts
+![4-after-customers](img/pin-customer.gif)
+![5-after-orders](img/pin-order.gif)
