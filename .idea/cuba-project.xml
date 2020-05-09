@@ -19,7 +19,7 @@
             <DependencyModelState>
               <option name="group" value="com.haulmont.cuba" />
               <option name="name" value="cuba-global" />
-              <option name="version" value="7.0.12" />
+              <option name="version" value="7.1.6" />
             </DependencyModelState>
           </list>
         </option>
@@ -36,7 +36,7 @@
     </option>
     <option name="dbArtifacts">
       <map>
-        <entry key="com.haulmont.cuba" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.cuba/cuba-core/7.0.12/d90476863feed9976cb3ff5657bc436545913042/cuba-core-7.0.12-db.zip" />
+        <entry key="com.haulmont.cuba" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.cuba/cuba-core/7.1.6/7013ce333469f53c16cf85a26f60357c5ee240d3/cuba-core-7.1.6-db.zip" />
       </map>
     </option>
   </component>

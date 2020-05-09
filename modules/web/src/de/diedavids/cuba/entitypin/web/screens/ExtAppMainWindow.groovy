@@ -1,11 +1,7 @@
 package de.diedavids.cuba.entitypin.web.screens
 
-import com.haulmont.cuba.core.entity.Entity
-import com.haulmont.cuba.gui.components.Action
-import com.haulmont.cuba.gui.components.Button
-import com.haulmont.cuba.gui.components.Component
-import com.haulmont.cuba.gui.components.DialogAction
-import com.haulmont.cuba.gui.components.Frame
+
+import com.haulmont.cuba.gui.components.*
 import com.haulmont.cuba.security.global.UserSession
 import com.haulmont.cuba.web.app.mainwindow.AppMainWindow
 import de.diedavids.cuba.entitypin.service.PinEntityService

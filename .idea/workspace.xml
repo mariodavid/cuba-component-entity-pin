@@ -2,42 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50e97e4b-a85f-444b-8616-009ca6a5e83e" name="Default Changelist" comment="switched to CUBA studio 7">
-      <change afterPath="$PROJECT_DIR$/.idea/cuba-project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/screen-designer-tool-window-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/EntityPinnedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/screens/customer/CustomerBrowse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/screens/customer/CustomerEdit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/screens/customer/customer-browse.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/screens/customer/customer-edit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/screens/order/OrderBrowse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/screens/order/OrderEdit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/screens/order/messages.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/screens/order/order-browse.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/screens/order/order-edit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/studio-intellij.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cuba-project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cuba-project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/core/src/de/diedavids/cuba/entitypin/core/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/screens/customer/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/core/src/de/diedavids/cuba/entitypin/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/src/de/diedavids/cuba/entitypin/spring.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web-app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web-app.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web-dispatcher-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web-dispatcher-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web-screens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web-screens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/customer/CustomerBrowse.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/customer/CustomerEdit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/customer/customer-browse.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/customer/customer-edit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/order/OrderBrowse.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/order/OrderEdit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/order/order-browse.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/order/order-edit.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/screens/ExtAppMainWindow.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/screens/ExtAppMainWindow.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/screens/PinAction.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitypin/web/screens/PinAction.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/web/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
